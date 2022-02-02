@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    padding: 5em;
+}
+
+.container {
+    background-color: black;
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 5em;
+    color: white;
+}
+
+p {
+    padding-bottom: 1em;
+}
+
+span {
+    color: yellow;
+    font-weight: 2rem;
+}
+
+button {
+    background-color: yellow;
+    color: black;
+    padding: 0.5em;
+    font-weight: 700;
+    border: 0;
+}
+
+button:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+.p-1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.p-2 {
+    font-size: 1.1rem;
+}
+
+.btn-big {
+    font-size: 1.3rem;
+}
+
+.btn-small {
+    font-size: 1rem;
+}

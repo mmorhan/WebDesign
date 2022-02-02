@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 5em;
+    background-color: darkslateblue;
+    text-align: start;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    padding: 5em;
+    color: white;
+}
+
+h1 {
+    color: purple;
+}
+
+h3 {
+    color: purple;
+}
+
+p {
+    padding-bottom: 1em;
+}
+
+section {
+    background-color: whitesmoke;
+    padding: 5em;
+}
+
+.container {
+    border: beige 1px solid;
+    max-width: 70em;
+    margin: 0 auto;
+    color: black;
+}
+
+.section-one {
+    color: black;
+}
+
+.section-two {}
