@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="red bubble">
+        <h1>Nice Curve</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit provident cumque cupiditate perspiciatis
+            maiores saepe ullam magni, qui sint tempora possimus, fuga blanditiis, officia quia dolorem impedit
+            voluptatum accusantium! Aliquam!</p>
+        <div class="curve"></div>
+    </section>
+    <section class="dark">
+        <h1>Nice Curve</h1>
+        <p>Quibusdam deserunt nesciunt officia. Incidunt excepturi non facilis qui maxime tempora perspiciatis quod
+            placeat dicta aperiam impedit, velit minus consequuntur id modi architecto nobis deserunt laudantium
+            repellat similique aspernatur itaque.</p>
+    </section>
+    <div class="spacer layer1"></div>
+    <section class="pink">
+        <h1>Wave Curve</h1>
+        <p>Numquam harum distinctio fugit nam quis impedit natus officia sed! Sed assumenda cumque illum sapiente est,
+            debitis veniam quae enim! Iusto illum unde labore quos distinctio perspiciatis molestiae ratione quisquam.
+        </p>
+    </section>
+    <section class="dark">
+        <h1>Nice Curve</h1>
+        <p>Iusto, suscipit, qui ducimus dolore excepturi amet quidem porro molestiae ipsum error voluptates quisquam.
+            Temporibus quis, laudantium officia itaque sapiente totam et perspiciatis, ab ducimus, obcaecati blanditiis
+            incidunt quas labore?</p>
+    </section>
+    <section class="blue ">
+        <h1>Nice Curve</h1>
+        <p>Molestias explicabo, maiores suscipit dicta temporibus unde nulla pariatur, aspernatur hic, quod quam numquam
+            iure eveniet soluta! Explicabo quaerat accusamus eum, animi voluptatum exercitationem reprehenderit fugiat
+            rem natus similique ducimus!</p>
+    </section>
+    <section class="dark">
+        <h1>Nice Curve</h1>
+        <p>Atque, sed assumenda, a maxime iusto qui eum vitae aspernatur sunt eligendi quisquam velit beatae fugiat nemo
+            provident laudantium ullam ex quam. Quisquam, libero nihil doloremque vero quia nobis quod!</p>
+    </section>
+    <div class="spacer layer1 flip"></div>
+    <section class="pink">
+        <h1>Nice Curve</h1>
+        <p>Tenetur accusantium consequuntur voluptate quasi aliquam quaerat possimus, consectetur impedit illum ea
+            quibusdam, debitis vero soluta rem saepe suscipit facere atque! Dignissimos doloribus sunt dolorum deleniti
+            similique perferendis natus vel.</p>
+
+        <svg class="blob-motion" id="visual" viewBox="0 0 900 600" width="900" height="600"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(430.3658246942008 293.77261084359174)">
+                <path id="blob1"
+                    d="M175.9 -178.3C210.4 -141.4 208.7 -70.7 197.5 -11.2C186.3 48.3 165.6 96.6 131.1 140.3C96.6 184 48.3 223 -0.4 223.3C-49 223.7 -98.1 185.4 -128.4 141.7C-158.7 98.1 -170.4 49 -163.5 6.8C-156.7 -35.4 -131.4 -70.7 -101 -107.5C-70.7 -144.4 -35.4 -182.7 17.7 -200.4C70.7 -218 141.4 -215.1 175.9 -178.3"
+                    fill="#BB004B"></path>
+            </g>
+            <g style="visibility:hidden;" transform="translate(502.75372418635345 271.90891174216284)">
+                <path id="blob2"
+                    d="M95.7 -98.2C120.7 -70.7 135.4 -35.4 144 8.6C152.6 52.6 155.1 105.1 130.1 141.1C105.1 177.1 52.6 196.6 -6.2 202.8C-65.1 209.1 -130.1 202.1 -180.1 166.1C-230.1 130.1 -265.1 65.1 -253.2 11.9C-241.2 -41.2 -182.5 -82.5 -132.5 -110C-82.5 -137.5 -41.2 -151.2 -2.9 -148.3C35.4 -145.4 70.7 -125.7 95.7 -98.2"
+                    fill="#BB004B"></path>
+            </g>
+        </svg>
+        <script>
+            const tween = KUTE.fromTo(
+                '#blob1',
+                { path: '#blob1' },
+                { path: '#blob2' },
+                { repeat: 10000, duration: 1000, yoyo: true }
+            );
+            tween.start();
+        </script>
+    </section>
+    <div class="spacer layer1 "></div>
+
+    <section class="red">
+        <h1>Nice Curve</h1>
+        <p>Nostrum veritatis, commodi cupiditate culpa nisi et quos facilis. Eligendi fuga ea voluptas dolores adipisci
+            natus magnam tempore quae quasi quaerat soluta, voluptates necessitatibus et quis quam tempora, rerum
+            quisquam.</p>
+    </section>
+</body>
+
+</html>

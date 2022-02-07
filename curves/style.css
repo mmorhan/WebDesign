@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+:root{
+    --Myblack:#101010;
+}
+body{
+    margin: 0;
+    font-family:"Indie Flower";
+    color :white;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 15vw; 
+    min-height: 15rem;
+}
+
+.blue{
+    background-color: aqua;
+}
+.red{
+    background-color: red;
+}
+.dark{
+    background-color:var(--Myblack);
+}
+.pink{
+    background-color: #C62368;
+}
+
+
+.curve{
+    position: absolute;
+    height: 15rem;
+    width: 100%;
+    bottom: 0;
+}
+.curve::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: var(--Myblack);
+    transform: translate(85%,60%); 
+}
+.curve::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: red;
+    transform: translate(-4%,40%); 
+    z-index: 1;
+}
+
+.bubble::after{
+    content:'' ;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position:absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--Myblack);
+}
+.bubble  h1, p{
+    z-index: 1;
+}
+.custom-shape-divider-top-1644274450 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.spacer{
+    aspect-ratio: 900/200;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1{
+    background-image:url("./layered-waves-haikei.svg") 
+}
+.flip{
+    transform: rotate(180deg);
+}
+h1{
+    z-index: 10;
+}
+.blob-motion{
+    width: 40%;
+    position: absolute;
+    transform: translateY(-20%);
+}
